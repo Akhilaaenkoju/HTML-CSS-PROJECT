@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+        integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar {
+            background-color: black;
+            font-family: calibri;
+            color: yellow;
+            padding: 1%;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .Holiday {
+            color: yellow;
+            font-size: 40px;
+
+        }
+        .Holiday:hover {
+            border: 3px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.2s;
+            transform: scale(1.2);
+            z-index: 3;
+            color: black;
+            cursor: pointer;
+        }
+       
+        
+
+        li {
+            display: inline;
+            margin-right: 25px;
+            float: right;
+        }
+
+        li:hover {
+            border: 3px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.1s;
+            transform: scale(1.2);
+            z-index: 3;
+            color: black;
+            cursor: pointer;
+        }
+        /* .blur {
+            display: flex;
+            width: 100%;
+        } */
+        .section a{
+        background-image: url(blur\ img.jpg);
+        width: 100vw;
+        height: 50vh;
+       }
+        .text {
+        justify-self: center;
+        align-self: center;
+        margin-left: 90px;
+        }
+
+         .text-box {
+            position: absolute;
+            
+            text-align: center;
+            justify-content: center;
+            margin-top: 80px;
+            margin-left: 450px;
+
+
+        } 
+
+        #p1 {
+            position: absolute;
+            top: 170px;
+            left: 90px;
+            color: white;
+        } 
+
+        .text-box h1 {
+            font-size: 30pxpx;
+        }
+
+        .text-box p {
+            font-size: 20px;
+        } */
+
+        .button {
+            border: yellow;
+            padding: 5px 5px;
+            /* opacity: 0.4; */
+            background: transparent;
+            color: white;
+            background-color: rgb(192, 192, 112);
+            cursor: pointer;
+            height: 30%;
+            width: 100%;
+            cursor: pointer;
+            overflow: hidden;
+            
+
+        }
+
+        .button:hover {
+            border: 1px solid yellow;
+            background: rgb(231, 231, 139);
+            transition: 0.5;
+        }
+
+        .container {
+            /* position: relative; */
+            display: flex;
+           background-color: aqua;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap; 
+            gap: 25;
+
+        }
+
+        .section1 {
+            border: 1px solid black;
+            height: 50vh;
+            width: 20vw;
+            text-align: center;
+        }
+
+        .head {
+            border: 1px solid black;
+            height: 15%;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .pic1 {
+            border: 2px solid black;
+
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px brown;
+            overflow: hidden;
+            height: 400px;
+            width: 250px;
+
+        }
+
+        .pic1:hover {
+            border: 1px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.5s;
+            transform: scale(1.2);
+            z-index: 3;
+        }
+
+        .pic2 {
+            border: 2px solid black;
+
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px brown;
+            overflow: hidden;
+            height: 400px;
+            width: 250px;
+        }
+
+        .pic2:hover {
+            border: 1px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.5s;
+            transform: scale(1.2);
+            z-index: 3;
+        }
+
+        .pic3 {
+            border: 2px solid black;
+
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px brown;
+            overflow: hidden;
+            height: 400px;
+            width: 250px;
+        }
+
+        .pic3:hover {
+            border: 1px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.5s;
+            transform: scale(1.2);
+            z-index: 3;
+        }
+
+        .pic4 {
+            border: 2px solid black;
+
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px brown;
+            overflow: hidden;
+            height: 400px;
+            width: 250px;
+        }
+
+        .pic4:hover {
+            border: 1px solid yellow;
+            background: rgb(236, 236, 109);
+            transition: 0.5s;
+            transform: scale(1.2);
+            z-index: 3;
+        }
+
+        .md {
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .fa-solid fa-heart {
+            size: 50px;
+            padding: 50px;
+            margin-left: 20px;
+            justify-content: center;
+
+        }
+
+        .fa-light fa-pen-to-square {
+            height: px;
+        }
+
+        .places2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .pica {
+            display: flex;
+            border: 2px solid black;
+            box-shadow: 0px 2px 4px white;
+            overflow: hidden;
+            height: 200px;
+            width: 450px;
+        }
+
+        .para1 {
+            color: black;
+            margin-left: 10px;
+
+        }
+
+        .picb {
+            display: flex;
+            border: 2px solid black;
+            box-shadow: 0px 2px 4px white;
+            overflow: hidden;
+            height: 200px;
+            width: 450px;
+        }
+
+        .para2 {
+            color: black;
+            margin-left: 10px;
+
+        }
+
+        .places3 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .picc {
+            display: flex;
+            border: 2px solid black;
+            box-shadow: 0px 2px 4px white;
+            overflow: hidden;
+            height: 200px;
+            width: 450px;
+        }
+
+        .para3 {
+            color: black;
+            margin-left: 10px;
+        }
+
+        .picd {
+            display: flex;
+            border: 2px solid black;
+            box-shadow: 0px 2px 4px white;
+            overflow: hidden;
+            height: 200px;
+            width: 450px;
+        }
+
+        .para4 {
+            color: black;
+            margin-left: 60px;
+        }
+
+        .para1 {
+            color: black;
+            margin-left: 10px;
+        }
+        
+    /* .button{
+        position: relative;
+        border: yellow;
+            padding: 5px 5px 5px 5px;
+            background: transparent;
+            color: white;
+            background-color: rgb(192, 192, 112);
+            cursor: pointer;
+            height: 40px;
+            width: 150px;
+            bottom: 180px;
+            left: 190px ;
+            cursor: pointer;
+            overflow: hidden;
+            text-align: center;
+           
+    }
+    .button:hover {
+            border: 1px solid yellow;
+            background: rgb(231, 231, 139);
+            transition: 0.5;
+        } */
+
+    
+    /* .container{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25;
+    }  */
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: -30px;
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid;
+        width: 300px;
+        background-color: rgba(0, 0, 0,0.5);
+    }
+
+    div a {
+        margin-top: 10px;
+        word-spacing: 10rem;
+    }
+
+    .btn {
+        background-color: aquamarine;
+
+    }
+
+    .submit {
+        background-color: rgb(218, 218, 46);
+        height: 2rem;
+        width: 5rem;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 1rem;
+
+    }
+    .img1 {
+        height: 215px;
+        width: 400px;
+    }
+
+    .newyork {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+        background-color: aquamarine;
+        margin-top: -4px;
+
+    }
+
+    .paris {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+        background-color: aquamarine;
+        margin-top: -4px;
+
+    }
+    h2{
+            text-align: center;
+            position: relative;
+        }
+        h2::before{
+            content: "";
+            height: 2px;
+            width: 50vw;
+            background-color:black;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: -2;
+        }
+        h2::after{
+            content: "";
+            height: 2px;
+            width: 50vw;
+            background-color:black;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: -2;
+        }
+        span{
+            background: white;
+        }
+        .footer {
+             font-size: 15px;
+             font-weight: 600;
+             text-align: center;
+             color: white;
+             letter-spacing: 1px;
+             background-color: black;
+        }
+        .allplaces{
+            display: flex;
+        }
+    @media screen and (min-width:320px) and (max-width:650px) {
+.Holiday{
+    display: none;
+   
+}
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img1 {
+            height: 150px;
+            width: 305px;
+        }
+
+        .newyork {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+
+        .paris {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+         h2{
+            text-align: center;
+            position: relative;
+            font-size: 15px;
+        }
+       .places2{
+            position: relative;
+            display: flex;
+            width: 100%;
+            /* flex-wrap: wrap; */ 
+            /* justify-content: center;
+            gap: 20px;
+            padding: 30px; */
+            flex-direction: column;
+            
+            /* height: 20%; */
+            width: 100%;
+            
+            /* gap: 10px;
+            padding: 20px; */
+       }
+       /* .places4{
+        display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 20%;
+            width: 10%; 
+            justify-content: center;
+       } */
+       
+       .places3{
+           flex-direction: column;
+       }
+
+      
+    }
+    /* @media screen and (min-width:601px) and (max-width:1024) 
+    } */
+
+ 
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="Holiday">Holiday</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Our Tours</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="section a">
+         <!-- <div class="blur"> 
+              <img src="blur img.jpg" style="width: 100%;">
+        </div> -->
+        <!-- <div class="text">
+            <h1>FIND <strong class="yellow" style="color: yellow;">THE BEST </strong>PLACE</h1>
+            <P>FOR YOUR HOLIDAYS</P>
+            <div class="button">
+                <span style="border: 2px solid; background-color: rgb(237, 237, 69);padding: 10px;">hiii</span>
+            </div>      -->
+        <!-- </div> -->
+        <!-- <h3 id="p1">
+             <div class="text-box">
+                <h1>FIND <strong class="yellow" style="color: yellow;">THE BEST </strong>PLACE</h1>
+                <P>FOR YOUR HOLIDAYS</P>
+                <div class="button">
+                    <p>LEARN MORE</p>
+         
+                </div>
+            </div>  -->
+        <!-- </h3> -->
+    </div>
+    <div class="main">
+        <div class="rw1">
+            <form class="form1">
+                <a>hello hello</a>
+                <lable for="name">Name:</lable>
+                <input type="tex" id="name">
+                <label for="date">Date:</label>
+                <input type="datetime-local" id="date">
+                <select id="info">
+                    <option value="">india</option>
+                    <option value="">America</option>
+                    <option value="">china</option>
+                    <option value="">Goa</option>
+                </select>
+
+                <div class="btn">
+                    <input type="submit" value="submit" class="submit">
+                </div>
+            </form>
+        </div>
+        <div class="rw2">
+            <img class="img1" src="https://www.civitatis.com/blog/wp-content/uploads/2023/03/miradores-nueva-york.jpg">
+            <div class="newyork">
+
+                <h4>Newyork</h4>
+                <h4>$6.600</h4>
+            </div>
+        </div>
+        <div class="rw3">
+            <img class="img1"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/59/86/caption.jpg?w=1400&h=1400&s=1">
+                <div class="paris">
+
+                    <h4>Paris</h4>
+                    <h4>$4.200</h4>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+    <!-- container end -->
+   <!-- horizontal line -->
+   <h2><span>LOREM EPSUM DOLLAR</span></h2>
+     <!-- 4 places container -->
+      <div class="places4">
+     <div class="places">
+        <div class="pic1">
+            <img src="pic1.jpg">
+            <div class="pic1-content">
+                <p>PROIN GRAVIDA NIBHVEL LOREM QUIS BIND</p>
+                <P style="color: rgb(122, 115, 115);">28 MARCH 2016</P>
+                <table class="table">
+                    <tr>
+                        <th><i class="fa-solid fa-heart"></i></th>
+                        <th>TRAVEL</th>
+                        <th><i class="fa-regular fa-notes"></i></th>
+
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+        <div class="pic2">
+            <img src="pic2.jpg">
+            <div class="pic1-content">
+                <p>PROIN GRAVIDA NIBHVEL LOREM QUIS BIND</p>
+                <P style="color: rgb(122, 115, 115);">28 MARCH 2016</P>
+                <!-- <i class="fa-solid fa-heart"></i>
+            <p>TRAVEL</p> -->
+                <table class="table">
+                    <tr>
+                        <th><i class="fa-solid fa-heart"></i></th>
+                        <th>TRAVEL</th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="pic3">
+            <img src="pic3.jpg">
+            <div class="pic1-content">
+                <p>PROIN GRAVIDA NIBHVEL LOREM QUIS BIND</p>
+                <P style="color: rgb(122, 115, 115);">28 MARCH 2016</P>
+                <!-- <i class="fa-solid fa-heart"></i>
+            <p>TRAVEL</p> -->
+                <table class="table">
+                    <tr>
+                        <th><i class="fa-solid fa-heart"></i></th>
+                        <th>TRAVEL</th>
+                        <th><i class="fa-regular fa-notes"></i></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="pic4">
+            <img src="pic4.jpg">
+            <div class="pic1-content"></div>
+            <p>PROIN GRAVIDA NIBHVEL LOREM QUIS BIND</p>
+            <P style="color: rgb(122, 115, 115);">28 MARCH 2016</P>
+            <!-- </div> -->
+            <!-- <i class="fa-solid fa-heart"></i>
+        <p>TRAVEL</p> -->
+            <table class="table">
+                <tr>
+                    <th><i class="fa-solid fa-heart"></i></th>
+                    <th>TRAVEL <i class="fa-regular fa-notes"></i></th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+<p>Holiday is a free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose.You do not need to provide a credit link to us. If you have any question,feel free to <a>contact us.</a>Credit goes to <a>Unspash</a>for images used in this template. </p>
+    <!-- places2 div  container-->
+    <h2><span>POPULAR PACKAGES</span></h2>
+   <div class="allplaces">
+    <!-- <div class="places2"> -->
+        <div class="pica">
+            <img src="pica.jpg">
+            <div class="para3">
+                <p>Proin gravida nibhvell velit auctor aliquet.Aenean sollicitudin,lorem quis bibendum auctor,nisi elit
+                    consequant ipsum</p>
+            </div>
+        </div>
+        <div class="picb pica">
+            <img src="picb.jpg">
+            <div class="para4">
+                <p>Proin gravida nibhvell velit auctor aliquet.Aenean sollicitudin,lorem quis bibendum auctor,nisi elit
+                    consequant ipsum </p>
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- places2 div closing -->
+     <!-- places3 div opening -->
+    <!-- <div class="places3"> -->
+        <div class="picc pica">
+            <img src="picc.jpg">
+            <div class="para3">
+                <p>Proin gravida nibhvell velit auctor aliquet.Aenean sollicitudin,lorem quis bibendum auctor,nisi elit
+                    consequant ipsum</p>
+            </div>
+        </div>
+        <div class="picd">
+            <img src="picd.jpg">
+            <div class="para4">
+                <p>Proin gravida nibhvell velit auctor aliquet.Aenean sollicitudin,lorem quis bibendum auctor,nisi elit
+                    consequant ipsum </p>
+            </div>
+        </div>
+    <!-- </div> -->
+    
+    <!-- places3 div close -->
+</div>
+    </div>
+
+   
+</div>
+    <!-- container div -->
+     <p class="footer">
+      Copyright 10000 Coders - Designed by <strong style="color: yellow;">AKHILA AENKOJU</strong>  
+
+     </p>
+</body>
+
+</html>
